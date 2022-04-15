@@ -1,0 +1,36 @@
+﻿@model E_Commerce.WebUI.Models.ProductListViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <a href="/product/index?seperated=1 " class="btn btn-info ml-3">Order by Name</a>
+    <a href="/product/index?seperated=2" class="btn btn-info ml-3">Order by Name Descending</a>
+    <a href="/product/index?seperated=3" class="btn btn-info ml-3">Order by Price</a>
+    <a href="/product/index?seperated=4" class="btn btn-info ml-3">Order by Price Descending</a>
+</div>
+
+
+    <div>
+        <table class="table">
+            <tr>
+                <td>
+                    Product Name
+                </td>
+                <td>
+                    Unit Price
+                </td>
+                <td>
+                    Unit In Stock
+                </td>
+            </tr>
+            @foreach (var item in Model.Products)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.UnitPrice</td>
+                    <td>@item.UnitsInStock</td>
+                </tr>
+            }
+        </table>
+    </div>
