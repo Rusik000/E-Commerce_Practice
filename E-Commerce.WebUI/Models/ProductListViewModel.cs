@@ -9,5 +9,6 @@ namespace E_Commerce.WebUI.Models
     public class ProductListViewModel
     {
         public List<Product> Products { get; set; }
+        public int CurrentCategory { get; set; }
     }
 }

@@ -4,10 +4,10 @@
 }
 
 <div>
-    <a href="/product/index?seperated=1 " class="btn btn-info ml-3">Order by Name</a>
-    <a href="/product/index?seperated=2" class="btn btn-info ml-3">Order by Name Descending</a>
-    <a href="/product/index?seperated=3" class="btn btn-info ml-3">Order by Price</a>
-    <a href="/product/index?seperated=4" class="btn btn-info ml-3">Order by Price Descending</a>
+    <a href="/product/index?seperated=1&category=@Model.CurrentCategory" class="btn btn-info ml-3">Order by Name</a>
+    <a href="/product/index?seperated=2&category=@Model.CurrentCategory" class="btn btn-info ml-3">Order by Name Descending</a>
+    <a href="/product/index?seperated=3&category=@Model.CurrentCategory" class="btn btn-info ml-3">Order by Price</a>
+    <a href="/product/index?seperated=4&category=@Model.CurrentCategory" class="btn btn-info ml-3">Order by Price Descending</a>
 </div>
 
 

@@ -61,10 +61,13 @@ namespace E_Commerce.WebUI.Controllers
 
             var vm = new ProductListViewModel()
             {
-                Products = TempProducts
+                Products = TempProducts,
+                CurrentCategory = category
             };
-
             return View(vm);
+
+
+
 
         }
     }
